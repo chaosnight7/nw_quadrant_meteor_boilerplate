@@ -1,6 +1,6 @@
 # NW Quadrant Web App
 
-This is my proposal for a barebones [Meteor](https://www.meteor.com/) for the NW Quadrant project.  It includes most all of the functionality we talked about — static pages (homepage, about page), individual organization pages, and a login/accounts system.  Still missing is an "admin" role for approving new organization pages before they're made public.
+This is my proposal for a barebones [Meteor app](https://www.meteor.com/) for the NW Quadrant project.  It includes most all of the functionality we talked about — static pages (homepage, about page), individual organization pages, and a login/accounts system.  Still missing is an "admin" role for approving new organization pages before they're made public.
 
 The idea is to let the programming team focus on this project, getting the functionality of the site up to where we want it, while the design team works on [this project](https://github.com/petestreet/nw_quadrant_mockups) in tandem.  Later, the two can merge once we reach a consensus.
 
@@ -8,11 +8,14 @@ The idea is to let the programming team focus on this project, getting the funct
 
 A version of the app is live at [nw-quadrant.herokuapp.com](https://nw-quadrant.herokuapp.com), where you may click around and add/edit organization pages.  We'll populate it with real data eventually, and then hand over the login info to each organization.  
 
-To run the most up-to-date version on your local machine (note that the online database won't be attached to the local instance, so you'll have to populate your own test data), do the following:
+To run the most up-to-date version on your local machine, do the following:
+
 - [Clone this git repository](https://help.github.com/articles/cloning-a-repository/)
 - [Install Meteor.js](https://www.meteor.com/install)
 - Open your terminal or command prompt, `cd` into the top level of the local repository, type `meteor`, and go to `localhost:3000` in your web browser.
 - Refer to Meteor's [documentation](http://docs.meteor.com) (or ask me) if you have trouble.
+
+Note that the online database won't be attached to the local instance, so you'll have to populate your own test data.
 
 ### How to contribute
 
