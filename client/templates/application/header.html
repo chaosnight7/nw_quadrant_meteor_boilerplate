@@ -1,0 +1,24 @@
+<template name="header">
+    <div class="navigation" role="navigation">
+        <ul>
+            <li>
+                <a href="{{pathFor route='homePage'}}">NW Quadrant</a>
+            </li>
+            <li>
+                <a href="{{pathFor route='organizationList'}}">All Organizations</a>
+            </li>
+            <li>
+                <a href="{{pathFor route='aboutPage'}}">About</a>
+            </li>
+            {{#if currentUser}}
+                <li class="myAccount">
+                    <a href="{{pathFor route='myAccount'}}">Account</a>
+                </li>
+                <li>
+                    {{> loginButtons}}
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+    <hr style="clear:both">
+</template>

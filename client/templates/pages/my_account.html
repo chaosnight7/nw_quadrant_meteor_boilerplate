@@ -1,0 +1,21 @@
+<template name="myAccount">
+    {{#if currentUser}}
+        <h1>Your Organization</h1>
+        <p>Click <a href="{{pathFor 'organizationPage' organizationName=username}}">here</a> to view your page.</p>
+
+        <p>Edit the text that appears for your organization here.</p>
+        <p>(we should add a pretty and easy-to-use content editor here)</p>
+
+        <div>
+            <form class="edit-organization">
+                <!-- TODO: we should add more fields here, such as tags -->
+                <input type="text" id="organization-edit-name" value="{{organizationName}}" required /><br>
+                <textarea id="organization-edit-info" maxlength="50000" required>{{organizationInfo}}</textarea><br>
+                <input class="organization-edit-submit" type="submit" value="Submit" />
+            </form>
+        </div>
+
+    {{else}}
+        <p>You are not logged in.</p>
+    {{/if}}
+</template>

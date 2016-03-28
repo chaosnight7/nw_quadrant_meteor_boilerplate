@@ -1,0 +1,52 @@
+.navigation ul {
+    list-style-type: none;
+}
+.navigation ul li {
+    float: left;
+    padding: 1em;
+}
+.login-buttons-wrap {
+    padding: 2rem;
+}
+
+.indent-right {
+    margin-left: 4rem;
+}
+
+.errors{
+    position: fixed;
+    z-index: 10000;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+.alert {
+    animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    width: 250px;
+    padding: 2em;
+    float: right;
+    clear: both;
+    margin-bottom: 5px;
+    pointer-events: auto;
+}
+/* values pulled from bootstrap */
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}

@@ -1,0 +1,12 @@
+<template name="temporaryNotifications">
+    <div class="errors">
+        {{#each temporaryNotifications}}
+            {{> temporaryNotification}}
+        {{/each}}
+    </div>
+</template>
+<template name="temporaryNotification">
+    <div class="alert alert-{{type}}" role="alert">
+        {{message}}
+    </div>
+</template>

@@ -1,0 +1,10 @@
+<template name="layout">
+    {{> header}}
+    {{> temporaryNotifications}}
+    <div class="wrapper">
+        <div id="main">
+            {{> yield}}
+        </div>
+        {{> footer}}
+    </div>
+</template>
