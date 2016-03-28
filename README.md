@@ -16,8 +16,8 @@ To run the most up-to-date version on your local machine (note that the online d
 
 ### How to contribute
 
--Let me know what your github username is so I can add you as a collaborator.
--After cloning this repository, make a new local branch: `git checkout -b my-branch-name` (make it a descriptive branch name).
--Make any changes you'd like in this new branch.  Test the changes out by saving your code and running meteor locally, per the above instructions.
--When you're ready, push your local branch to github: `git push origin my-branch-name`.
--Click "new pull request" on the repository page, and make sure you're comparing your new branch with `master`.
+- Let me know what your github username is so I can add you as a collaborator.
+- After cloning this repository, make a new local branch: `git checkout -b my-branch-name` (make it a descriptive branch name).
+- Make any changes you'd like in this new branch.  Test the changes out by saving your code and running meteor locally, per the above instructions.
+- When you're ready, push your local branch to github: `git push origin my-branch-name`.
+- Click "new pull request" on the repository page, and make sure you're comparing your new branch with `master`.
