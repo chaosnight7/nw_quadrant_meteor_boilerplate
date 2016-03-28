@@ -6,13 +6,13 @@ The idea is to let the programming team focus on this project, getting the funct
 
 ### How to run
 
-A version of the app is live at [nw-quadrant.herokuapp.com](nw-quadrant.herokuapp.com), where you may click around and add/edit organization pages.  We'll populate it with real data eventually, and then hand over the login info to each organization.  
+A version of the app is live at [nw-quadrant.herokuapp.com](https://nw-quadrant.herokuapp.com), where you may click around and add/edit organization pages.  We'll populate it with real data eventually, and then hand over the login info to each organization.  
 
 To run the most up-to-date version on your local machine (note that the online database won't be attached to the local instance, so you'll have to populate your own test data), do the following:
--[Clone this git repository](https://help.github.com/articles/cloning-a-repository/)
--[Install Meteor.js](https://www.meteor.com/install)
--Open your terminal or command prompt, `cd` into the top level of the local repository, type `meteor`, and go to `localhost:3000` in your web browser.
--Refer to Meteor's [documentation](http://docs.meteor.com) (or ask me) if you have trouble.
+- [Clone this git repository](https://help.github.com/articles/cloning-a-repository/)
+- [Install Meteor.js](https://www.meteor.com/install)
+- Open your terminal or command prompt, `cd` into the top level of the local repository, type `meteor`, and go to `localhost:3000` in your web browser.
+- Refer to Meteor's [documentation](http://docs.meteor.com) (or ask me) if you have trouble.
 
 ### How to contribute
 
