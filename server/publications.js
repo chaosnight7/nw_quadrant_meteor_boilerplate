@@ -7,6 +7,10 @@ Meteor.publish('accountPageOrganization', function(user) {
     check(user._id, String);
     return Organizations.find({userId: user._id});
 });
-Meteor.publish('organizationList', function () {
-    return Organizations.find({}, {username: 1});  //returns only the username field
+Meteor.publish('organizationList', function (options) {
+    check(options, {
+        sort: Object
+    });
+
+    return Organizations.find({}, {username: 1, sort: options.sort});  //returns only the username field
 });
