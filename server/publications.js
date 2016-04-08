@@ -1,6 +1,6 @@
 Meteor.publish('organizationPage', function(username) {
     check(username, String);
-    return Organizations.find({username: username});
+    return Organizations.find({username: Accounts.findUserByUsername(username).username});
 });
 Meteor.publish('accountPageOrganization', function(user) {
     check(user, Object);
