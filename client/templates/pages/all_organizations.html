@@ -1,7 +1,15 @@
 <template name="organizationList">
+    <p>Tags:</p>
+    {{#each tagList}}
+        <li class="list-tag-name">{{this.name}}</li><br>
+    {{/each}}
+
+    <p>Organizations:</p>
     {{#each organizationList}}
         <ul>
-            <li><a href="{{pathFor 'organizationPage' organizationName=this.username}}">{{this.username}}</a></li>
+            {{#if inTagFilter this}}
+                <li><a href="{{pathFor 'organizationPage' organizationName=this.username}}">{{this.username}}</a></li>
+            {{/if}}
         </ul>
     {{/each}}
 </template>

@@ -4,5 +4,8 @@ Template.organizationPage.helpers({
     },
     organizationInfo: function() {
         return this.info ? this.info : "Organization info";
+    },
+    organizationTags: function() {
+        return this.tags ? this.tags : ["Organization tags"];
     }
 });

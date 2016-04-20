@@ -12,5 +12,5 @@ Meteor.publish('organizationList', function (options) {
         sort: Object
     });
 
-    return Organizations.find({}, {username: 1, sort: options.sort});  //returns only the username field
+    return Organizations.find({approved: true}, {username: 1, tags: 1, sort: options.sort});  //returns only the username field
 });
