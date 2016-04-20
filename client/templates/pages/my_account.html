@@ -11,6 +11,11 @@
                 <!-- TODO: we should add more fields here, such as tags -->
                 <input type="text" id="organization-edit-name" value="{{organizationName}}" required /><br>
                 <textarea id="organization-edit-info" maxlength="50000" required>{{organizationInfo}}</textarea><br>
+
+                {{#each org_tag_names}}
+                    <input type="checkbox" class="org-tag" value="{{this.name}}"> {{this.name}}<br>
+                {{/each}}
+
                 <input class="organization-edit-submit" type="submit" value="Submit" />
             </form>
         </div>
