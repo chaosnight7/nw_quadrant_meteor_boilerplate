@@ -1,9 +1,8 @@
 <template name="organizationList">
-    <p>Tags:</p>
     {{#each tagList}}
-        <li class="list-tag-name">{{this.name}}</li><br>
+        <span class="list-tag-name">{{this.name}}</span>&nbsp;
     {{/each}}
-
+    
     <p>Organizations:</p>
     {{#each organizationList}}
         <ul>
